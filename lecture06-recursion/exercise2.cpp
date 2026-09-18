@@ -4,7 +4,13 @@ using namespace std;
 void printDown(int n)
 {
     //to do
-    cout << n << endl;
+    if (n == 1) {
+        cout << 1;
+    }
+    else {
+        cout << n << ", ";
+        printDown(n - 1);
+    }
 }
 
 int main()

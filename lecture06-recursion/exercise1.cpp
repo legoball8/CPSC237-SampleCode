@@ -12,11 +12,14 @@ using namespace std;
 int sumUpTo(int n)
 {
     // Base case: What should happen when n == 1?
-
+    if (n == 1) {
+        return 1;
+    }
     // Recursive case: How can you express
     // sumUpTo(n) in terms of sumUpTo(n - 1)?
-
-    return 0;
+    else {
+        return sumUpTo(n - 1) + n;
+    }
 }
 
 int main()
